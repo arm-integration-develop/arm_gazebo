@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>arm_gazebo</name>
+  <version>0.1.20</version>
+  <description>A template for ROS packages.</description>
+  <maintainer email="liaoqiayuan@gmail.com">Qiayuan Liao</maintainer>
+  <license>BSD</license>
+  <author email="liaoqiayuan@gmail.com">Qiayuan Liao</author>
+
+  <!-- buildtool_depend: dependencies of the build process -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- depend: build, export, and execution dependency -->
+  <depend>roscpp</depend>
+  <depend>arm_common</depend>
+
+  <depend>gazebo</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros_control</depend>
+
+  <depend>arm_instance</depend>
+  <depend>roboticsgroup_upatras_gazebo_plugins</depend>
+
+  <export>
+    <gazebo_ros_control plugin="${prefix}/arm_robot_hw_sim_plugins.xml"/>
+    <gazebo_ros gazebo_model_path="${prefix}/.."/>
+  </export>
+</package>
