@@ -37,7 +37,7 @@
 
 #pragma once
 
-#include "interface/hardware_interface/robot_state_interface.h"
+#include "arm_common/interface/hardware_interface/robot_state_interface.h"
 #include <gazebo_ros_control/default_robot_hw_sim.h>
 #include <std_srvs/Trigger.h>
 
